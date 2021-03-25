@@ -1,0 +1,36 @@
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_poster{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    transition: transform 450ms; /* This transition help smoothen the transform on the hover very nice tool*/
+    margin-right: 10px;
+    
+}
+
+.row_poster:hover{
+    transform: scale(1.08); /* This when we hover on an image , the scale increases slightly to 1.08*/
+    
+}
+
+.row_posters_large .row_poster{
+    max-height: 250px;
+}
+
+.row_posters_large .row_poster:hover {
+    transform: scale(1.1);
+}
+
+.row{
+    color: white;
+}
